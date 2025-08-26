@@ -1,7 +1,7 @@
 import { LightningElement } from 'lwc';
 
 export default class BankLoanInterestComponent extends LightningElement {
-
+// adding new line of comments to check git commit and  push
 
     loanResult;
     principal;
