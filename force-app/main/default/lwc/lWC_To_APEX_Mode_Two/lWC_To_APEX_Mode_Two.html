@@ -1,0 +1,18 @@
+<template>
+
+        <lightning-card title="Fetch Data From Apex (Mode 2) - Wired Function" icon-name="custom:custom35">
+        
+            <div>
+            <template if:true={accounts}>
+                <template for:each={accounts} for:item="acc">
+               <p key={acc.Id}>{acc.Name}</p>
+                </template>
+              </template>
+           
+              <template if:true={error}> 
+                 {error}
+               </template>
+               </div>
+        </lightning-card>
+     
+</template>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shadow Dom</title>
+<style>
+P{
+    color:red;
+}
+
+</style>
+</head>
+
+<body>
+
+<div><p>Thanks for choosing Zero to Hero Course</p></div>
+    <div id="host"> </div>
+    <button onclick="fetchPtag()">Click Me</button>
+</body>
+<script>
+
+const elam=document.querySelector("#host")
+const shadowRoot=elam.attachShadow({mode:'open'})
+shadowRoot.innerHTML='<p>Iam Shadow Dom</p>'
+
+function fetchPtag(){
+
+    let tags=document.querySelectorAll('p')
+    console.log(tags)
+}
+
+</script>
+
+</html>

@@ -1,0 +1,27 @@
+<template>
+
+    <lightning-card title="LWC Tab Component" icon-name="custom:custom57">
+
+     <lightning-button variant="brand" label="Show Cashless Info" onclick={handleClick}></lightning-button>
+
+     <lightning-button variant="brand" label="Show Reimbursement Info" onclick={handleClick}></lightning-button>
+
+     <lightning-button variant="brand" label="Hide Cashless Info" onclick={handleClick}></lightning-button>
+
+     <lightning-button variant="brand" label="Hide Reimbursement Info" onclick={handleClick}></lightning-button>
+
+
+     <lightning-tabset variant="scoped">
+        <template if:true={VarTabOneBool}>
+            <lightning-tab  label="Item One">Content For Cashless Info</lightning-tab>
+        </template>
+        
+        <template if:true={VarTabTwoBool}>
+            <lightning-tab  label="Item Two">Content For Reimbursement Info</lightning-tab>
+        </template>
+    
+    </lightning-tabset>
+
+
+    </lightning-card>
+</template>
