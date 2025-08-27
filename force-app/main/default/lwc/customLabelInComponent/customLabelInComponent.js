@@ -5,6 +5,7 @@ import { LightningElement } from 'lwc';
 import WelcomeLabel from '@salesforce/label/c.WelcomeLabel';
 import HomePageLabel from '@salesforce/label/c.HomaPageLabel';
 import NewClientLabel from '@salesforce/label/c.NewCliantLabel';
+// to create new content for sync all changes 
 
 export default class CustomLabelInComponent extends LightningElement {
 
